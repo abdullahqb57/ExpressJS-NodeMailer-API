@@ -1,0 +1,76 @@
+doctype html
+html
+  head
+    title Login Page
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Text+Me+One', rel='stylesheet')
+    style(type='text/css').
+      body {
+      background-color: gainsboro;
+      font-family: sans-serif;
+      text-shadow: 2px 2px rosybrown;
+      font-family: 'Text Me One',
+      sans-serif;
+      }
+      .main {
+      border-radius: 10px;
+      padding: 10px;
+      margin: auto;
+      width: 1194px;
+      height: 830px;
+      background-color: gray;
+      text-align: left;
+      }
+      .left {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      padding-left: 20px;
+      margin-left: 100px;
+      margin-top: 200px;
+      float: left;
+      width: 500px;
+      height: 400px;
+      background-color: azure;
+      }
+      .right {
+      padding: 10px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      text-align: justify;
+      margin-top: 200px;
+      float: left;
+      width: 480px;
+      height: 379px;
+      background-color: aqua;
+      }
+      button {
+      padding: 10px;
+      border-radius: 50%;
+      background-color: lightskyblue;
+      }
+      input {
+      padding: 10px;
+      }
+  body
+    .main
+      form(action='/contact', method='POST')
+        .left
+          h1 Login
+          p Sign in to your account
+          br
+          i.fas.fa-stroopwafel
+          input(type='text', placeholder='Username or Email', name='email', required='')
+          br
+          br
+          i.fas.fa-lock.icon
+          input(type='password', placeholder='Password', name='password', required='')
+          br
+          br
+          button Login
+        .right
+          h1 Sign up
+          p
+            | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a explicabo iure eum pariatur voluptate
+            | nisi obcaecati cumque reprehenderit at? Distinctio numquam tempore, voluptate dolore sit quaerat autem
+            | maiores laboriosam!
+          button  Register Now!
